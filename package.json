@@ -20,7 +20,18 @@
     "eslint-config-prettier": "^8.1.0",
     "lerna": "^4.0.0",
     "prettier": "^2.2.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "scripty": "^2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "format": "scripty",
+    "build": "scripty",
+    "test": "scripty",
+    "lint": "scripty",
+    "clean": "scripty"
+  },
+  "scripty": {
+    "path": "./scripts/workspace"
+  }
 }

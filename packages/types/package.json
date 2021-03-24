@@ -7,11 +7,14 @@
     "access": "public"
   },
   "scripts": {
-    "format": "prettier --config ./../../.prettierrc --write \"{src,tests}/**/*.{js,ts}\"",
-    "lint": "eslint src --ext js,ts",
-    "test": "jest",
-    "clean": "rimraf dist *.tsbuildinfo",
-    "build": "tsc -b ."
+    "format": "scripty",
+    "lint": "scripty",
+    "test": "scripty",
+    "clean": "scripty",
+    "build": "scripty"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.13.10",
